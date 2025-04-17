@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convite Especial</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container" id="loginScreen">
+    <div class="carta">
+      <h2>Sarah</h2>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite a senha"/>
+      <button onclick="verificarSenha()">Entrar</button>
+    </div>
+  </div>
+
+  <div class="container" id="conviteScreen" style="display: none;">
+    <div class="convite">
+      <div class="texto">
+        <h1>Quer sair comigo<br>hoje à noite?</h1>
+        <div class="botoes">
+          <button onclick="responder(true)">Sim</button>
+          <button onclick="responder(false)">Não</button>
+        </div>
+      </div>
+      <div class="fotos">
+        <img src="foto1.jpg" alt="Foto 1"/>
+        <img src="foto2.jpg" alt="Foto 2"/>
+        <img src="foto3.jpg" alt="Foto 3"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="respostaScreen" style="display: none;">
+    <div class="resposta">
+      <h1>Muito obg, eu te amo!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
